@@ -1,0 +1,102 @@
+
+.cartao-container {
+  height: 100vh;
+  width: 100%;
+  background-color: #f3f3f3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.cartao {
+  width: 100%;
+  max-width: 360px;
+  background-color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+.cartao-logo img {
+  width: 80px;
+  height: auto;
+}
+
+.cartao-info h1 {
+  font-size: 20px;
+  color: #222;
+  margin: 0;
+}
+
+.cartao-info p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 6px;
+}
+
+
+.cartao-links {
+  display: flex;
+  gap: 20px;
+}
+
+
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-in-out;
+  border-radius: 50%;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.icon.linkedin {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/174/174857.png');
+}
+
+.icon.instagram {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png');
+}
+
+.icon.site {
+  background-image: url('https://cdn-icons-png.flaticon.com/512/535/535239.png');
+}
+
+@media (max-width: 430px) {
+  .cartao {
+    padding: 28px 20px;
+    gap: 20px;
+  }
+
+  .cartao-logo img {
+    width: 70px;
+  }
+
+  .cartao-info h1 {
+    font-size: 18px;
+  }
+
+  .cartao-info p {
+    font-size: 13px;
+  }
+
+  .icon {
+    width: 36px;
+    height: 36px;
+  }
+}
